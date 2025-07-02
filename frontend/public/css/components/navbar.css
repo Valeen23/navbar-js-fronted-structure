@@ -46,8 +46,13 @@
     text-decoration: none;
     color: var(--white);
     transition: color 0.3s ease;
+    font-size: var(--fs-xs);
 }
 
 .navbar__link:hover{
     color: var(--secundary-950);
+}
+
+p{
+    font-size: var(--fs-md);
 }
