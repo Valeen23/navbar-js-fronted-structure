@@ -3,7 +3,6 @@
 /* Distribución general (fondo del body, display, flexbox, grid, alturas, anchos, etc.). */
 
 html {
-    margin: 0;
     box-sizing: border-box;
     font-size: 62.5%;
 }
@@ -14,6 +13,8 @@ html {
 body {
     font-family: var(--main-font);
     color: var(--black);
+    padding: 0;
+    margin: 0;
 }
 
 /* 1. Contenedor Principal */
