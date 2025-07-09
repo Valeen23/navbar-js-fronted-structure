@@ -27,6 +27,19 @@
     --secundary-100:#FEF8E1;
     --secundary-50:#FEFCF5;
 
+    /* terciary color*/
+    --terciary-950: #2a1917;
+    --terciary-900: #472f2a;
+    --terciary-800: #5b3a35;
+    --terciary-700: #734a42;
+    --terciary-600: #8d5e52;
+    --terciary-500: #a97667;
+    --terciary-400: #c59783;
+    --terciary-300: #dcb8a4;
+    --terciary-200: #ecd6c9;
+    --terciary-100: #f8eee9;
+    --terciary-50: #fdf8f6;
+
     /* Basic color*/
     --white: #fff;
     --black: #000;
