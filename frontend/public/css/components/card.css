@@ -1,0 +1,62 @@
+.cards-container {
+    display: grid;
+    gap: 24px;
+    justify-content: center;
+    border: 1px solid var(--terciary-300);
+    padding: 24px;
+
+}
+
+@media (width > 640px) {
+    .cards-container{
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 90%;
+        margin: 100px auto 0;
+    }
+}
+
+@media (width > 1024px) {
+    .cards-container {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 90%;
+    }
+}
+
+.card {
+    border: 1px solid var(--terciary-500);
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    /* Esta medida de 320px es porque el celular comercial más pequeño que se vende en la actualidad tiene esa medida*/
+    min-width: 320px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 1);
+}
+
+.card__title {
+    font-size: var(--fs-md);
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.card__icons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 24px 0px;
+}
+
+.card__icon {
+    width: 48px;
+    height: 48px;
+}
+
+.card__description {
+    font-size: var(--fs-xs);
+    line-height: 1.5;
+}

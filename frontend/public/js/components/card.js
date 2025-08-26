@@ -5,13 +5,10 @@ export async function loadCards(containerSelector, cardIds = []) {
 
     // Obtenemos el contenedor del DOM
     const container = document.querySelector(containerSelector);
-
     if(!container)return; // Si no existe simplemente nos salimos 
 
     try{
-
         const[templateRes, dataRes] = await Promise.all([
-
             // Manejo de rutas - Hacer dos fetch al mismo tiempo
             // 1 es para la plantilla
             // 2 es para los datos
@@ -37,7 +34,8 @@ export async function loadCards(containerSelector, cardIds = []) {
             .replace("{{icon2}}",card.icon2)
             .replace("{{description}}",card.description);
 
-            container.innerHTML += html;
+            // container.innerHTML += html;
+            container.insertAdjacentHTML("beforeend", html);
         });
 
     }catch(error){
